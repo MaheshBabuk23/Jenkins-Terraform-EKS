@@ -22,7 +22,7 @@ module "eks" {
   control_plane_subnet_ids = module.vpc.intra_subnets
 
   # EKS Managed Node Group(s)
-  eeks_managed_node_group_defaults = {
+  eks_managed_node_group_defaults = {
   ami_type       = "AL2023_x86_64_STANDARD"
   instance_types = ["m5.large"]
 
